@@ -1,0 +1,83 @@
+{
+  "rules": [
+    {
+      "id": "R001",
+      "diagnosis": "Influenza",
+      "specialty": "Internal Medicine",
+      "icd10": "J11.1",
+      "criteria": [
+        { "symptom": "fever", "required": true },
+        { "symptom": "cough", "required": true },
+        { "symptom": "fatigue", "required": false },
+        { "symptom": "body aches", "required": false },
+        { "symptom": "headache", "required": false }
+      ],
+      "minRequired": 2,
+      "minTotal": 3,
+      "recommendations": [
+        "Rest and hydration",
+        "Antiviral medication if within 48 hours",
+        "Symptomatic treatment"
+      ]
+    },
+    {
+      "id": "R002",
+      "diagnosis": "Pneumonia",
+      "specialty": "Internal Medicine",
+      "icd10": "J18.9",
+      "criteria": [
+        { "symptom": "cough", "required": true },
+        { "symptom": "fever", "required": true },
+        { "symptom": "shortness of breath", "required": false },
+        { "symptom": "chest pain", "required": false },
+        { "symptom": "fatigue", "required": false }
+      ],
+      "minRequired": 2,
+      "minTotal": 3,
+      "recommendations": [
+        "Chest X-ray",
+        "Antibiotic therapy",
+        "Hospitalization if severe"
+      ]
+    },
+    {
+      "id": "R003",
+      "diagnosis": "Major Depressive Episode",
+      "specialty": "Psychiatry",
+      "icd10": "F32.9",
+      "criteria": [
+        { "symptom": "depressed mood", "required": true },
+        { "symptom": "loss of interest", "required": false },
+        { "symptom": "sleep disturbance", "required": false },
+        { "symptom": "fatigue", "required": false },
+        { "symptom": "concentration problems", "required": false }
+      ],
+      "minRequired": 1,
+      "minTotal": 3,
+      "recommendations": [
+        "Psychiatric evaluation",
+        "Consider antidepressant therapy",
+        "Psychotherapy referral"
+      ]
+    },
+    {
+      "id": "R004",
+      "diagnosis": "Eczema",
+      "specialty": "Dermatology",
+      "icd10": "L30.9",
+      "criteria": [
+        { "symptom": "itchy skin", "required": true },
+        { "symptom": "red rash", "required": true },
+        { "symptom": "dry skin", "required": false },
+        { "symptom": "skin inflammation", "required": false }
+      ],
+      "minRequired": 2,
+      "minTotal": 2,
+      "recommendations": [
+        "Topical corticosteroids",
+        "Moisturizing routine",
+        "Avoid triggers"
+      ]
+    }
+  ]
+}
